@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calorie Counter</title>
+    <link
+      rel="stylesheet"
+      href="
+https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <!-- IMAGE CONTAINER BEGIN -->
+        <!-- IMAGE CONTAINER BEGIN -->
+        <div
+          class="col-lg-6 col-md-6 d-none d-md-block infinity-image-container"
+        ></div>
+        <!-- IMAGE CONTAINER END -->
+
+        <!-- IMAGE CONTAINER END -->
+        <!-- FORM CONTAINER BEGIN -->
+        <div class="col-lg-6 col-md-6 infinity-form-container">
+          <div class="title">Calorie Counter</div>
+          <div class="content">
+            <form action="#" name="counter">
+              <div class="user-details">
+                <div class="input-box">
+                  <span class="details">Umur</span>
+                  <input
+                    type="number"
+                    placeholder="Masukkan umur sekarang"
+                    required
+                    id="umur"
+                    name="umur"
+                    min="1"
+                  />
+                </div>
+                <div class="input-box">
+                  <span class="details">Tinggi Badan (CM)</span>
+                  <input
+                    type="number"
+                    placeholder="Masukkan tinggi badan sekarang"
+                    required
+                    id="tinggibadan"
+                    name="tinggibadan"
+                    min="1"
+                  />
+                </div>
+                <div class="input-box">
+                  <span class="details">Berat Badan (KG)</span>
+                  <input
+                    type="number"
+                    placeholder="Masukkan berat badan sekarang"
+                    required
+                    id="beratbadan"
+                    name="beratbadan"
+                    min="1"
+                  />
+                </div>
+              </div>
+              <span class="details">Aktivitas Mingguan</span>
+              <select class="form-select" id="aktivitas" name="aktivitas">
+                <option value="1">Tidak Olahraga</option>
+                <option value="2">Olahraga (1-3x/minggu)</option>
+                <option value="3">Olahraga (3-5x/minggu)</option>
+                <option value="4">Olahraga (6-7x/minggu)</option>
+                <option value="5">Olahraga (>7/minggu)</option>
+              </select>
+              <div class="gender-details mt-3">
+                <input type="radio" name="gender" id="dot-1" value="1" />
+                <input type="radio" name="gender" id="dot-2" value="2" />
+                <span class="gender-title">Jenis Kelamin</span>
+                <div class="category">
+                  <label for="dot-1">
+                    <span class="dot one"></span>
+                    <span class="gender">Laki-laki</span>
+                  </label>
+                  <label for="dot-2">
+                    <span class="dot two"></span>
+                    <span class="gender">Perempuan</span>
+                  </label>
+                </div>
+              </div>
+              <div class="button">
+                <div class="row">
+                  <div class="col-lg-6 col-md-12">
+                    <input type="button" value="Hitung" onclick="hitung()" />
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <input type="reset" value="Reset" onclick="bersihkan()" />
+                  </div>
+                </div>
+              </div>
+            </form>
+            <table>
+              <tr>
+                <td><div class="result">Basal Metabolic Rate&nbsp;</div></td>
+                <td><div class="result">:&nbsp;</div></td>
+                <td><div class="totalbmr" id="totalbmr"></div></td>
+              </tr>
+              <tr>
+                <td><div class="result">Kebutuhan Calorie</div></td>
+                <td><div class="result">:&nbsp;</div></td>
+                <td><div class="totalcalorie" id="totalcalorie"></div></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <!-- FORM CONTAINER END -->
+      </div>
+    </div>
+    <script src="javascript.js"></script>
+    <script type="text/javascript"></script>
+  </body>
+</html>
